@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Породи котів – Головна</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="header">
+    Котики
+  </div>
+
+  <div class="container">
+    <div class="menu">
+      <h3>Меню</h3>
+      <ul>
+        <li>Головна</li>
+        <li><a href="persian.html">Персидський кіт</a></li>
+        <li><a href="siamese.html">Сіамський кіт</a></li>
+        <li><a href="bengal.html">Бенгальський кіт</a></li>
+        <li><a href="films.html">Напопулярніші фільми про котів</a></li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <h2>Ласкаво просимо!</h2>
+      <p>
+        Тут ви знайдете коротку інформацію про найпопулярніші породи:
+        персидські, сіамські та бенгальські коти.
+      </p>
+      
+      <img src="images/cats.jpg" alt="Кілька порід котів" width="400" height="480">
+
+      <p>
+        Коти – одні з найулюбленіших домашніх тварин у всьому світі. Вони можуть бути спокійними, грайливими та дуже
+        харизматичними.
+      </p>
+
+      <h2 class="form-header">Обери свого улюбленого кота</h2>
+      <form action="cat_input.php" method="POST">
+        <p>Як тебе звати?<br>
+        <input type="text" name="firstname" required /></p>
+
+        <p>Улюблена порода котів:<br>
+          <label><input type="radio" name="breed" value="Персидський" required /> Персидський</label>
+          <label><input type="radio" name="breed" value="Сіамський" /> Сіамський</label>
+          <label><input type="radio" name="breed" value="Бенгальський" /> Бенгальський</label>
+        </p>
+
+        <p>Чи маєш кота?<br>
+        <input type="checkbox" name="has_cat" /> Так</p>
+
+        <p>Улюблені риси характеру котів:<br>
+        <select name="traits[]" size="4" multiple required>
+          <option value="Лагідність">Лагідність</option>
+          <option value="Грайливість">Грайливість</option>
+          <option value="Самостійність">Самостійність</option>
+          <option value="Розумність">Розумність</option>
+        </select></p>
+
+        <p>Коментар або цікава історія:<br>
+        <textarea name="comment" maxlength="300"></textarea></p>
+
+        <input type="submit" value="Надіслати">
+      </form>
+    </div>
+
+    <div class="sidebar">
+      <h3>Корисні посилання</h3>
+      <ul>
+        <li><a href="https://www.google.com" target="_blank">Google</a></li>
+        <li><a href="https://uk.wikipedia.org/" target="_blank">Вікіпедія (укр)</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer">
+    catbreeds@gmail.com
+  </div>
+
+</body>
+</html>
